@@ -1,0 +1,15 @@
+.tag__list{
+    z-index: 100;
+}
+
+.tag__label{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tag__label:hover{
+    background-color: #f5f5f5;
+}

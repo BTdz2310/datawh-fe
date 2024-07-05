@@ -1,0 +1,43 @@
+header.__container{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header .__content{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left img{
+    object-fit: cover;
+    height: 40px;
+}
+
+.header__right{
+    display: flex;
+    gap: 20px;
+    height: 100%;
+}
+
+.header__right .__button{
+    height: 100%;
+    /*padding: 0 40px;*/
+    border-radius: 40px;
+}
+
+@media (max-width: 575px) {
+    .header__right .__button{
+        padding: 20px 20px;
+    }
+
+    .header__right{
+        gap: 10px;
+    }
+}

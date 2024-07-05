@@ -1,0 +1,256 @@
+.tms.__container{
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.tms .__content .__box{
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    gap: 60px;
+    border: none;
+    background-color: #9C69E2;
+    padding: 80px;
+}
+
+.tms__circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+
+#tms__circle--selected{
+    width: 20px;
+    height: 20px;
+    background-color: #F063B8;
+}
+
+.tms .__content h1{
+    font-family: Helvetica;
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.tms__slider{
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    height: fit-content;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.tms__slider--item{
+    padding: 40px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tms__slider--first{
+    display: flex;
+    gap: 40px;
+    text-align: left;
+    align-items: center;
+}
+
+.tms__name{
+    color: #212353;
+    font-size: 18px;
+    font-family: Avenir;
+    font-weight: 900;
+}
+
+.tms__url{
+    color: #9C69E2;
+    font-family: Avenir;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tms__text{
+    color: #4B5D68;
+    font-family: Avenir;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 160px;
+    text-align: left;
+    width: 520px;
+}
+
+.tms__avatar{
+    width: 120px;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    clip-path: ellipse(closest-side farthest-side);
+}
+
+.tms__slider--first img{
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+}
+
+.tms__circle-list{
+    display: flex;
+    gap: 5px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.tms__slider--right{
+    width: 80px;
+    position: absolute;
+    right: -80px;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tms__slider--left{
+    width: 80px;
+    position: absolute;
+    left: -80px;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.tms__slider--left i, .tms__slider--right i{
+    color: white;
+}
+
+@media (max-width: 575px){
+    .__box{
+        padding: 20px 40px!important;
+        gap: 16px!important;
+    }
+
+    .tms .__content h1{
+        font-size: 8vw;
+    }
+
+    .tms__slider--left{
+        width: 40px;
+        left: -40px;
+    }
+
+    .tms__slider--right{
+        width: 40px;
+        right: -40px;
+    }
+
+    .tms__slider--item{
+        padding: 20px;
+    }
+
+    .tms__text{
+        padding: 0;
+        width: 100%;
+        word-break: break-word;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .tms__avatar{
+        width: 20vw;
+        height: 15vw;
+    }
+
+    .tms__slider--first img{
+        width: 20vw;
+        flex-shrink: 0;
+    }
+
+    .tms__slider--first{
+        gap: 16px;
+    }
+
+    .tms__info{
+        flex-shrink: 0;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+    .__box{
+        padding: 40px!important;
+        gap: 28px!important;
+    }
+
+    .tms__slider--left{
+        width: 40px;
+        left: -40px;
+    }
+
+    .tms__slider--right{
+        width: 40px;
+        right: -40px;
+    }
+
+    .tms__slider--item{
+        padding: 40px;
+    }
+
+    .tms__slider--second{
+        margin-top: 20px;
+    }
+
+    .tms__text{
+        padding: 0;
+        word-break: break-word;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+    .tms__slider--item{
+        padding: 40px;
+    }
+
+    .tms__text{
+        font-size: 16px;
+    }
+
+    .tms .__content .__box{
+        gap: 40px;
+        padding: 60px 80px;
+    }
+
+}
+
+@media (min-width: 992px ) and (max-width: 1199px) {
+
+    .tms.__container{
+        /*padding: 0 20px;*/
+    }
+
+    .tms .__content{
+        /*padding: 60px;*/
+
+    }
+
+    .tms .__content .__box{
+        padding: 60px 80px;
+        gap: 40px;
+    }
+
+}

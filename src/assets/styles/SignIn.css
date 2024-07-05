@@ -1,0 +1,45 @@
+.signin.__container{
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+
+.signin .__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 420px;
+    height: fit-content;
+}
+
+.signin .__content h1{
+    font-weight: 400;
+    font-size: 64px;
+    color: black;
+}
+
+.signin .__form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signin .__form label{
+    text-align: left;
+}
+
+.signin .__form input{
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.signin .__button{
+    /*padding: 20px 0;*/
+    border-radius: 40px;
+}
+
+.signin .__form input:focus{
+    outline: none;
+}
